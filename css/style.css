@@ -250,6 +250,11 @@ body {
     justify-content: center;
     align-items: center;
   }
+
+  .pie-pag {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 /* imagenes animacion */
