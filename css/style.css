@@ -159,6 +159,7 @@ body {
   width: 250px;
   float: left;
   margin: 0 5px 0 0;
+  transition: 1s ease;
 }
 
 .start-1 {
@@ -205,7 +206,7 @@ body {
 .footer-text {
   color: #fff;
 }
-/* responsive */
+/* RESPONSIVE */
 @media screen and (max-width: 700px) {
   .main-menu {
     display: flex;
@@ -230,12 +231,8 @@ body {
 
   .pexel-1 {
     max-width: 40%;
+    transition: 1s;
   }
-
-  /* .title {
-    position: relative;
-    left: 22%;
-  } */
 
   .brand {
     position: relative;
@@ -260,18 +257,54 @@ body {
 /* imagenes animacion */
 
 .pexel-1:hover {
-  animation: 1s;
-  animation-name: img-animation;
-  animation-duration: 1s;
-  animation-fill-mode: both;
+  width: 400px;
 }
 
-@keyframes img-animation {
-  from {
-    width: 250px;
-  }
+/* slider */
 
-  to {
-    width: 400px;
+#slider {
+  overflow: hidden;
+}
+
+.figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  animation: 20s slider infinite;
+}
+
+.slider-item {
+  width: 20%;
+  float: left;
+}
+
+@keyframes slider {
+  0% {
+    left: 0;
+  }
+  20% {
+    left: 0;
+  }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -100%;
+  }
+  50% {
+    left: -200%;
+  }
+  70% {
+    left: -200%;
+  }
+  75% {
+    left: -300%;
+  }
+  95% {
+    left: -300%;
+  }
+  100% {
+    left: -400%;
   }
 }
