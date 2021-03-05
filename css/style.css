@@ -252,6 +252,15 @@ body {
     display: flex;
     flex-direction: column;
   }
+
+  .pexel-1 {
+    width: 100px;
+    animation: 1.5s ease;
+  }
+
+  .pexel-1:hover {
+    width: 200px;
+  }
 }
 
 /* imagenes animacion */
