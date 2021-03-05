@@ -3,10 +3,11 @@
 
 * {
   font-family: "Shippori Mincho B1", serif;
+  box-sizing: border-box;
 }
 
 body {
-  /* height: 100vh; */
+  max-width: 100%;
   margin: 0;
   padding: 0;
   background-color: #7f8fa6;
@@ -75,16 +76,18 @@ body {
 /* Contenidos */
 
 .title {
+  display: inline-block;
+  width: 100%;
   color: #fff;
   margin: 5px 0 0 0;
   font-family: "Bebas Neue", cursive;
-  position: relative;
-  left: 40%;
+  text-align: center;
+  /* position: relative;
+  left: 40%; */
   font-size: 45px;
   animation-name: mover;
   animation-duration: 5.5s;
   animation-fill-mode: both;
-  width: 100%;
 }
 
 @keyframes mover {
@@ -229,25 +232,23 @@ body {
     max-width: 40%;
   }
 
-  .title {
+  /* .title {
     position: relative;
     left: 22%;
-  }
+  } */
 
   .brand {
-    position: absolute;
-    top: 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
   }
 
   .header {
     position: relative;
-  }
-}
-
-@media screen and (max-width: 425px) {
-  .title {
-    position: relative;
-    left: 9%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 
