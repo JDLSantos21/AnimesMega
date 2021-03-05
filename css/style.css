@@ -254,12 +254,12 @@ body {
   }
 
   .pexel-1 {
-    width: 100px;
-    animation: 1.5s ease;
+    width: 50px;
+    animation: 1s ease;
   }
 
   .pexel-1:hover {
-    width: 200px;
+    width: 400px;
   }
 }
 
