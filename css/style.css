@@ -241,3 +241,22 @@ body {
     position: relative;
   }
 }
+
+/* imagenes animacion */
+
+.pexel-1:hover {
+  animation: 1s;
+  animation-name: img-animation;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+@keyframes img-animation {
+  from {
+    width: 250px;
+  }
+
+  to {
+    width: 400px;
+  }
+}
