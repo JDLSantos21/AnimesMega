@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+* {
+  font-family: "Shippori Mincho B1", serif;
+}
+
+body {
+  /* height: 100vh; */
+  margin: 0;
+  padding: 0;
+  background-color: #7f8fa6;
+  /* background-image: url(http://www.hdfondos.eu/preview/get_photo/520096/1680/1050);
+  background-repeat: no-repeat; */
+}
+
+.header {
+  background: #2f3542;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.main-menu {
+  display: flex;
+}
+
+.main-menu__item {
+  list-style: none;
+  padding: 0 15px;
+}
+
+.main-menu__link {
+  text-decoration: none;
+  color: #fff;
+  transition: border 0.2s ease;
+}
+
+.btn-1 {
+  border-bottom: 4px solid #e55039;
+}
+
+.main-menu__link:hover {
+  border-bottom: 4px solid #e55039;
+}
+
+.main-menu__link:active {
+  color: #3c6382;
+}
+
+.brand-img {
+  width: 50px;
+}
+
+.brand {
+  align-items: center;
+  display: flex;
+  position: absolute;
+  left: 0;
+  margin: 0 20px;
+}
+
+.title-logo {
+  font-size: 20px;
+  color: #e55039;
+}
+
+.title-logo__link {
+  text-decoration: none;
+}
+
+/* Contenidos */
+
+.title {
+  color: #fff;
+  margin: 5px 0 0 0;
+  font-family: "Bebas Neue", cursive;
+  position: relative;
+  left: 40%;
+  font-size: 45px;
+  animation-name: mover;
+  animation-duration: 5.5s;
+  animation-fill-mode: both;
+  width: 100%;
+}
+
+@keyframes mover {
+  from {
+    color: transparent;
+    text-shadow: 0;
+  }
+
+  to {
+    color: #e55039;
+    text-shadow: 2px 2px 4px #000000;
+  }
+}
+
+.description {
+  color: #fff;
+  margin: 0;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.main {
+  display: flex;
+  max-width: 80%;
+  margin: 40px auto;
+  /* border: 2px solid white; */
+  overflow: hidden;
+  justify-content: space-evenly;
+  /* transform: translate(-100%);
+  transition:1s ease;
+  max-width: 80%;
+  transform: translate(0); */
+  animation-name: main-animation;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+}
+
+.main-2 {
+  display: flex;
+  max-width: 80%;
+  margin: 40px auto;
+  /* border: 2px solid white; */
+  overflow: hidden;
+  justify-content: space-evenly;
+  /* transform: translate(-100%);
+  transition:1s ease;
+  max-width: 80%;
+  transform: translate(0);*/
+  animation-name: main-animation;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+}
+
+@keyframes main-animation {
+  from {
+    transform: translate(-100%);
+  }
+
+  to {
+    transform: translate(0);
+  }
+}
+
+.sub-title {
+  color: #fff;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.pexel-1 {
+  width: 250px;
+  float: left;
+  margin: 0 5px 0 0;
+}
+
+.start-1 {
+  /* display: flex; */
+  justify-content: center;
+  /* border: 2px solid #e55039; */
+  align-items: flex-start;
+  animation-name: border-start;
+  animation-duration: 5.5s;
+  animation-fill-mode: both;
+}
+
+.start-2 {
+  /* display: flex; */
+  align-items: flex-start;
+  /* border: 2px solid #e55039; */
+  animation-name: border-start;
+  animation-duration: 5.5s;
+  animation-fill-mode: both;
+}
+
+@keyframes border-start {
+  from {
+    border: 2px solid transparent;
+    outline: 2px solid red;
+  }
+
+  to {
+    border: 5px solid #e55039;
+    outline: 1px solid #ffffff;
+  }
+}
+
+.pie-pag {
+  display: flex;
+  justify-content: center;
+  background: #e74c3c;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  align-items: center;
+}
+
+.footer-text {
+  color: #fff;
+}
+
+@media screen and (max-width: 700px) {
+  .main-menu {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-menu__item {
+    margin: 0 40px 40px 0;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .pexel-1 {
+    max-width: 40%;
+  }
+
+  .title {
+    position: relative;
+    left: 22%;
+  }
+
+  .brand {
+    position: absolute;
+    top: 0;
+  }
+
+  .header {
+    position: relative;
+  }
+}
