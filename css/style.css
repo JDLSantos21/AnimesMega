@@ -202,11 +202,13 @@ body {
 .footer-text {
   color: #fff;
 }
-
+/* responsive */
 @media screen and (max-width: 700px) {
   .main-menu {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    margin: 5 0;
   }
 
   .main-menu__item {
@@ -239,6 +241,13 @@ body {
 
   .header {
     position: relative;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .title {
+    position: relative;
+    left: 9%;
   }
 }
 
