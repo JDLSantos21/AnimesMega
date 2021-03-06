@@ -317,3 +317,9 @@ body {
     left: -400%;
   }
 }
+
+.ctn-slider {
+  width: 80%;
+  position: relative;
+  left: 10%;
+}
